@@ -185,6 +185,7 @@ open class JudoPayViewController: UIViewController {
         
         self.navigationController?.navigationBar.tintColor = self.judoKitSession.theme.getTextColor()
         self.navigationController?.navigationBar.barTintColor = self.judoKitSession.theme.getNavigationBarBackgroundColor()
+        self.navigationController?.navigationBar.isTranslucent = self.judoKitSession.theme.judoNavigationBarIsTranslucent
         if !self.judoKitSession.theme.colorMode() {
             self.navigationController?.navigationBar.barStyle = UIBarStyle.black
         }

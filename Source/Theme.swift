@@ -117,6 +117,9 @@ public struct Theme {
     /// The default navigation bar background color
     public var judoNavigationBarBackgroundColor: UIColor?
     
+    /// The default navigation bar background color
+    public var judoNavigationBarIsTranslucent = true
+
     /// The color that is used for active input fields
     public var judoInputFieldTextColor: UIColor?
     
