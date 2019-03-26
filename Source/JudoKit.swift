@@ -453,12 +453,12 @@ public class JudoKit {
                 }
             case is UITabBarController:
                 let tabBarController = viewController as! UITabBarController
-                let currentVc = tabBarController.selectedViewController
+                let currentVc = tabBarController.selectedViewController!
                 
-                if let presentedVC = viewController?.presentedViewController {
+                if let presentedVC = currentVc.presentedViewController {
                     presentedVC.show(vc, sender: nil)
                 } else {
-                    currentVc!.present(vc, animated:true, completion:nil)
+                    currentVc.present(vc, animated:true, completion:nil)
                 }
             default:
                 viewController?.present(vc, animated:true, completion:nil)
